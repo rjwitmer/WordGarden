@@ -117,7 +117,11 @@
                                             <constraint firstAttribute="width" constant="30" id="zml-Cp-Ue7"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <action selector="doneKeyPressed:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="ovy-Pv-7oV"/>
+                                            <action selector="guessedLetterChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="ufj-ba-RBi"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ko4-Ix-a0G">
                                         <rect key="frame" x="38" y="2" width="118" height="30"/>
